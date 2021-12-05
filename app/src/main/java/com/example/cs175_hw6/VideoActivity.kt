@@ -116,6 +116,7 @@ class VideoActivity : AppCompatActivity() {
             (totalSec % 60).toString()
         }
         return "$min:$sec"
+
     }
 
 
