@@ -53,9 +53,9 @@ class VideoActivity : AppCompatActivity() {
                 status = PAUSE
             }
             else {
-                videoView!!.pause()
-                playBtn!!.setImageResource(R.drawable.play_icon)
-                status = PAUSE
+                videoView!!.start()
+                playBtn!!.setImageResource(R.drawable.pause_icon)
+                status = PLAY
             }
         }
         replayBtn?.setOnClickListener{
