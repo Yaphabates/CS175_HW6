@@ -26,7 +26,7 @@ class ImageActivity : AppCompatActivity() {
     }
 
     private fun addImage(imageURL: String) {
-        val imageHolder: ImageView = layoutInflater.inflate(R.layout.image_template, null).findViewById<ImageView>(R.id.image_holder)
+        val imageHolder: ImageView = layoutInflater.inflate(R.layout.activity_image_item, null).findViewById<ImageView>(R.id.image_holder)
         Glide.with(this)
             .load(imageURL)
             .apply(RequestOptions.diskCacheStrategyOf(DiskCacheStrategy.ALL))
